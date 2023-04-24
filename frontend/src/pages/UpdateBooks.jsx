@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import axios from 'axios';
 
  const UpdateBooks = ({handleUpdate}) => {
    
@@ -20,10 +19,6 @@ import axios from 'axios';
 
     const submit = async (e) => {
         e.preventDefault();
-        // await axios.
-        //     post(`http://localhost:1000/api/v1/updateBook/${}`, data)
-        //     .then((res) => alert(res.data.message));
-
         handleUpdate(data);
         setData({
             bookname: "",

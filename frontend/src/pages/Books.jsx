@@ -9,13 +9,11 @@ const Books = () => {
     const fetch = async () => {
       await axios
         .get("https://book-store-app-ujjwal7017.onrender.com/api/v1/getBooks")
-        // .get('http://localhost:5000/api/v1/getBooks')
         .then((res) => setData(res.data.books));
     };
     fetch();
   }, [])
   const handelDelete = async (id) => {
-    // const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/deleteBook/${id}`);
     await axios.post(`https://book-store-app-ujjwal7017.onrender.com/api/v1/deleteBook/${id}`)
     .then(res =>{
       alert("Deleted Sucessfully");

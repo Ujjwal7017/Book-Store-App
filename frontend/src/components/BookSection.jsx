@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AddBooks from '../pages/AddBooks';
+
 import UpdateBooks from '../pages/UpdateBooks';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,16 +20,7 @@ const BookSection = ({ data,deleteHandler }) => {
     console.log(id);
     console.log(data);
     axios.put(`https://book-store-app-ujjwal7017.onrender.com/api/v1/updateBook/${id}`,data)
-    // axios.put(`http://localhost:5000/api/v1/updateBook/${id}`,data)
     .then((res) => alert(res.data.message));
-    // const res = await fetch(`http://localhost:1000/api/v1/updateBook/${id}`, {
-    //   method: "PUT",
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': "application/json"
-    //   },
-    //   body: data
-    // })
     setShow(false);
   }
 
@@ -72,8 +63,6 @@ const BookSection = ({ data,deleteHandler }) => {
 
 
           </div>
-
-
       }
     </>
 

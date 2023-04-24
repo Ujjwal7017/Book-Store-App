@@ -10,36 +10,16 @@
   color: white;
   font-size: 20px;
 }
-.book, .update-book {
-  /* height: 80vh; */
-  /* overflow: scroll; */
-}
 @media screen and (max-width: 992px) {
   .book, .update-book, .addbook{
     min-height: 90vh;
-    /* overflow: scroll; */
   }
 }
 @media screen and (min-width: 992px){
   .book, .update-book, .addbook{
     min-height: 80vh;
-    /* overflow: scroll; */
   }
 }
-/* 
-.addbook{
-  overflow: scroll;
-  height: 80vh;
-} */
-/* .book{
-  background: white;
-  height: 70vh;
-}
-*::-webkit-scrollbar{
-  display: none;
-} */
-
-/* @media screen and (min-width: 580px) { */
   .main{
     background: black;
     min-height:100vh;
