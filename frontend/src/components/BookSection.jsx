@@ -14,6 +14,7 @@ const BookSection = ({ data }) => {
     const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/deleteBook/${id}`,{
       method:'POST'
     });
+    navigate('/books');
   }
   const handleUpdate = async (data) => {
     console.log(id);
