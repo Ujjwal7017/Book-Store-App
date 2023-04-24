@@ -18,11 +18,11 @@
 
 @media screen and (max-width: 992px) {
     .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-top: 20px;
     }
     .homeimg-box{
         display: flex;
@@ -30,11 +30,11 @@
 }
 @media screen and (min-width: 992px) {
     .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;  
-    margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;  
+        margin-top: 20px;
     }
     
     .homeimg-box{

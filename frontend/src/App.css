@@ -16,13 +16,13 @@
 }
 @media screen and (max-width: 992px) {
   .book, .update-book, .addbook{
-    height: 90vh;
+    min-height: 90vh;
     /* overflow: scroll; */
   }
 }
 @media screen and (min-width: 992px){
   .book, .update-book, .addbook{
-    height: 80vh;
+    min-height: 80vh;
     /* overflow: scroll; */
   }
 }
@@ -42,5 +42,5 @@
 /* @media screen and (min-width: 580px) { */
   .main{
     background: black;
-    height:100vh;
+    min-height:100vh;
   }

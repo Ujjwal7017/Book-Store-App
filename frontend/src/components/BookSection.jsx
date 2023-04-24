@@ -5,21 +5,22 @@ import { useNavigate } from 'react-router-dom';
 
 import axios from 'axios';
 
-const BookSection = ({ data }) => {
+const BookSection = ({ data,deleteHandler }) => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState('');
   const navigate = useNavigate();
 
   const handelDelete = async (id) => {
-    const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/deleteBook/${id}`,{
-      method:'POST'
-    });
-    navigate('/books');
+    deleteHandler(id);
+    // const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/deleteBook/${id}`);
+    // const res = await fetch(`http://localhost:5000/api/v1/deleteBook/${id}`);
+    // navigate("/books");
   }
   const handleUpdate = async (data) => {
     console.log(id);
     console.log(data);
     axios.put(`https://book-store-app-ujjwal7017.onrender.com/api/v1/updateBook/${id}`,data)
+    // axios.put(`http://localhost:5000/api/v1/updateBook/${id}`,data)
     .then((res) => alert(res.data.message));
     // const res = await fetch(`http://localhost:1000/api/v1/updateBook/${id}`, {
     //   method: "PUT",
