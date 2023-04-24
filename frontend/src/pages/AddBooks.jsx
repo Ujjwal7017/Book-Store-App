@@ -19,7 +19,7 @@ const AddBooks = (e) => {
     const submit = async (e) => {
         e.preventDefault();
         await axios.
-            post("http://localhost:1000/api/v1/add", data)
+            post("https://book-store-app-ujjwal7017.onrender.com/api/v1/add", data)
             .then((res) => alert(res.data.message));
         setData({
             bookname: "",

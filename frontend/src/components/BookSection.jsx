@@ -22,7 +22,7 @@ const BookSection = ({ data }) => {
   const handleUpdate = async (data) => {
     console.log(id);
     console.log(data);
-    axios.put(`http://localhost:1000/api/v1/updateBook/${id}`,data)
+    axios.put(`https://book-store-app-ujjwal7017.onrender.com/api/v1/updateBook/${id}`,data)
     .then((res) => alert(res.data.message));
     // const res = await fetch(`http://localhost:1000/api/v1/updateBook/${id}`, {
     //   method: "PUT",

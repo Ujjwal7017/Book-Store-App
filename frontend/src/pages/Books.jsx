@@ -8,7 +8,7 @@ const Books = () => {
   useEffect(() => {
     const fetch = async () => {
       await axios
-        .get("http://localhost:1000/api/v1/getBooks")
+        .get("https://book-store-app-ujjwal7017.onrender.com/api/v1/getBooks")
         .then((res) => setData(res.data.books));
     };
     fetch();
