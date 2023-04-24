@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.viewBook{
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 1px 20px 5px 20px;
+  color: white;
+  font-size: 20px;
+}
+.book, .update-book {
+  /* height: 80vh; */
+  /* overflow: scroll; */
+}
+@media screen and (max-width: 992px) {
+  .book, .update-book, .addbook{
+    height: 90vh;
+    /* overflow: scroll; */
+  }
+}
+@media screen and (min-width: 992px){
+  .book, .update-book, .addbook{
+    height: 80vh;
+    /* overflow: scroll; */
+  }
+}
+/* 
+.addbook{
+  overflow: scroll;
+  height: 80vh;
+} */
+/* .book{
+  background: white;
+  height: 70vh;
+}
+*::-webkit-scrollbar{
+  display: none;
+} */
+
+/* @media screen and (min-width: 580px) { */
+  .main{
+    background: black;
+    height:100vh;
+  }
