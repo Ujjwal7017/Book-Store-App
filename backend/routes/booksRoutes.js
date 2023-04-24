@@ -59,17 +59,15 @@ router.put("/updateBook/:id", async (req,res) => {
 });
 
 // DELETE BOOK BY ID
-router.get("/deleteBook/:id", async (req,res) => {
+router.post("/deleteBook/:id", async(req,res) => {
     // console.log(req.params);
     const id = req.params.id;
     try{
-        await bookModel
-        .findByIdAndDelete(id).then(() => res.status(201).json({message: "Deleted Successfully"}));
+        await bookModel.findByIdAndDelete(id).then(() => res.status(201).json({message: "Deleted Successfully"}));
     } catch (error) {
         console.log(error);
     }
-    res.status(200).json({"message":"delete successfully"});
-
+   
 
 })
 

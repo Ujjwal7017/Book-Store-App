@@ -9,9 +9,11 @@ const BookSection = ({ data }) => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState('');
   const navigate = useNavigate();
-  const handelDelete = async (id) => {
-    const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/api/v1/deleteBook/${id}`);
 
+  const handelDelete = async (id) => {
+    const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/api/v1/deleteBook/${id}`,{
+      method:'POST'
+    });
   }
   const handleUpdate = async (data) => {
     console.log(id);
