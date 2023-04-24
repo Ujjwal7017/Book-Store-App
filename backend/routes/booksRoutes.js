@@ -59,8 +59,8 @@ router.put("/updateBook/:id", async (req,res) => {
 });
 
 // DELETE BOOK BY ID
-router.get("/deleteBook/:id", async(req,res) => {
-    // console.log(req.params);
+router.post("/deleteBook/:id", async(req,res) => {
+    console.log(req.params);
     const id = req.params.id;
     try{
         await bookModel.findByIdAndDelete(id).then(() => res.status(200).json({message: "Deleted Successfully"}));
