@@ -59,7 +59,7 @@ router.put("/updateBook/:id", async (req,res) => {
 });
 
 // DELETE BOOK BY ID
-router.delete("/deleteBook/:id", async (req,res) => {
+router.get("/deleteBook/:id", async (req,res) => {
     // console.log(req.params);
     const id = req.params.id;
     try{
@@ -68,6 +68,7 @@ router.delete("/deleteBook/:id", async (req,res) => {
     } catch (error) {
         console.log(error);
     }
+    res.status(200).json({"message":"delete successfully"});
 
 
 })
