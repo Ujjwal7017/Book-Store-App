@@ -10,7 +10,7 @@ const BookSection = ({ data }) => {
   const [id, setId] = useState('');
   const navigate = useNavigate();
   const handelDelete = async (id) => {
-    const res = await fetch(`http://localhost:1000/api/v1/deleteBook/${id}`, {
+    const res = await fetch(`https://book-store-app-ujjwal7017.onrender.com/api/v1/api/v1/deleteBook/${id}`, {
       method: "DELETE",
       headers: {
         'Accept': 'application/json',
